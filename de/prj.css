@@ -1,0 +1,146 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css?family=Abel|Aguafina+Script|Artifika|Athiti|Condiment|Dosis|Droid+Serif|Farsan|Gurajada|Josefin+Sans|Lato|Lora|Merriweather|Noto+Serif|Open+Sans+Condensed:300|Playfair+Display|Rasa|Sahitya|Share+Tech|Text+Me+One|Titillium+Web');
+/*
+ * Calculator
+ */
+
+#calc-container
+{
+	box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
+	background-color: #7a88b3;
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 2vh auto;
+	height: 42vw;
+	width: 80vw;
+}
+
+/* 	Product details  */
+.calc-details 
+{
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 12px;
+	height: 100%;
+	float: left;
+	width: 60%;
+}
+
+/* 	Product Name */
+#calc-container .calc-details h1
+{
+	font-family: 'Old Standard TT', serif;
+	display: inline-block;
+	position: relative;
+	font-size: 4vw;
+	color: #344055;
+	margin: 0;
+}
+
+/* The most important information about the product */
+#calc-container .calc-details  p 
+{
+	margin-top: -20px;
+	font-family: 'Old Standard TT', serif;
+	font-size: 1.9vw;
+	color: #344055;
+}
+
+#calc-container .calc-details p #link
+{
+	color: #4065a4;
+    text-decoration: none;
+}
+
+#calc-container img 
+{
+	margin: 15% 10% 10% 5%;
+	width: 80%;
+	height: 80%;
+}
+
+/* product image  */
+.calc-image 
+{
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	width: 40%;
+	display: inline-block;
+}
+
+/*
+ * SpotifyManager
+ */
+ #spot-container
+{
+	box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
+	background-color: #7a88b3;
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 2vh auto;
+	margin-bottom: 8vh;
+
+	height: 29.5vw;
+	width: 80vw;
+}
+
+/* 	Product details  */
+.spot-details 
+{
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 45%;
+}
+
+/* 	Product Name */
+#spot-container .spot-details h1
+{
+	font-family: 'Old Standard TT', serif;
+	display: inline-block;
+	position: relative;
+	font-size: 3.2vw;
+	color: #344055;
+	margin: 0;
+}
+
+#spot-container .spot-details > p 
+{
+	font-family: 'Old Standard TT', serif;
+	font-size: 1.7vw;
+	color: #344055;
+	
+}
+
+#spot-container .spot-details p #link
+{
+	color: #4065a4;
+    text-decoration: none;
+}
+
+.spot-image 
+{
+	transition: all 0.3s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	width: 55%;
+	display: inline-block;
+}
+
+#spot-container img 
+{
+	padding-top: 1vh;
+	margin: 5% 5% 5% 5%;
+	width: 85%;
+	height: 85%;
+}

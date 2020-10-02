@@ -1,0 +1,156 @@
+/* 
+ * ------------------------------------------------------------------------------------------- 
+ * scrollbar 
+ * https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
+ * ------------------------------------------------------------------------------------------- 
+ */
+
+/* declaring color variables */
+:root
+{
+    --main-bg-color: #3C445B;
+    --secondary-bg-color: #515d7d;
+
+    --dropdown-bg-color: #515d7d;
+    --dropdown-items-bg-color: #424a63;
+    --dropdown-font-color: #212531;
+
+    --dropdown-active-color: #3a435b;
+    --dropdown-hover-color: #576585;
+    --dropdown-focus-color: #333b4e;
+}
+
+::-webkit-scrollbar 
+{
+  margin-right: 5px;
+  background: #314f4c;
+  width: 8px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track 
+{
+  margin-right: 5px;
+  box-shadow: inset 20px 0 5px transparent;
+  border-radius: 5px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb 
+{
+  background: rgb(43, 47, 47);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover 
+{
+  background: lightgrey;
+}
+
+
+
+/* 
+ * ------------------------------------------------------------------------------------------- 
+ * header 
+ * ------------------------------------------------------------------------------------------- 
+ */
+
+/*setting the height and the background color of header*/
+header 
+{
+  background-color: var(--main-bg-color);
+  color: #70C4BA;
+}
+
+.fixed-header
+{
+  height: 55px;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------------- 
+ * navbar
+ * ------------------------------------------------------------------------------------------- 
+ */
+
+.navbar 
+{
+  padding-top: 5px;
+  padding-left: 2vw;
+  padding-bottom: 5px;
+}
+
+.navbar .navbar-brand:hover 
+{
+  color: white;
+}
+
+@media screen and (max-width: 1200px) 
+{
+  .navbar .navbar-nav li a 
+  {
+    font-size: 3vw !important;
+    margin-right: 2.5vw;
+    display: inline-block;
+    color: #70c4ba;
+  }
+}
+
+@media screen and (min-width: 1200px) 
+{
+  .navbar .navbar-nav li a 
+  {
+    font-size: 25px !important;
+    margin-right: 2.5vw;
+    display: inline-block;
+    color: #70c4ba;
+  }
+}
+
+.navbar .navbar-nav li a 
+{
+  font-size: 1.8vw;
+  margin-right: 2.5vw;
+  display: inline-block;
+  color: #70c4ba;
+}
+
+.navbar .navbar-nav li a:hover 
+{
+  color: white;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item 
+{
+  color: #37474f !important;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item:hover 
+{
+  color: black !important;
+}
+
+.navbar-toggler 
+{
+  background-color: var(--dropdown-bg-color);
+}
+
+.navbar-toggler-icon 
+{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(60, 68, 91, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.content
+{
+  padding-top: 5vh;
+  background-color: var(--secondary-bg-color);
+  min-height: 100vh;
+  height: fit-content;
+}

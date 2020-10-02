@@ -1,0 +1,352 @@
+/* 
+ * ------------------------------------------------------------------------------------------- 
+ * scrollbar 
+ * https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
+ * ------------------------------------------------------------------------------------------- 
+ */
+
+ /* declaring color variables*/
+:root
+{
+    --main-bg-color: #3C445B;
+
+    --dropdown-bg-color: #515d7d;
+    --dropdown-items-bg-color: #424a63;
+    --dropdown-font-color: #212531;
+
+    --dropdown-active-color: #3a435b;
+    --dropdown-hover-color: #576585;
+    --dropdown-focus-color: #333b4e;
+}
+
+::-webkit-scrollbar 
+{
+    margin-right: 5px;
+    background: #314f4c;
+    /* background: inherit; */
+    width: 8px;
+}
+
+::-webkit-scrollbar-track 
+{
+    margin-right: 5px;
+    box-shadow: inset 20px 0 5px transparent;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb 
+{
+    background: rgb(43, 47, 47);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover 
+{
+    background: lightgrey;
+}
+
+html
+{
+    height: 100vh;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------------- 
+ * header 
+ * ------------------------------------------------------------------------------------------- 
+ */
+
+/*setting the height and the background color of header*/
+header
+{
+    background-color: var(--main-bg-color);
+}
+
+@media screen and (min-width: 992px) 
+{
+    header 
+    {
+        height: 100vh;
+        background-color: var(--main-bg-color);
+        /* padding-bottom: 3vh; */
+    }
+}
+
+@media screen and (max-width: 992px) 
+{
+    
+    
+    header 
+    {
+        height: 100vh;
+        background-color: var(--main-bg-color); 
+    }
+}
+
+/* 
+ * ------------------------------------------------------------------------------------------- 
+ * navbar
+ * ------------------------------------------------------------------------------------------- 
+ */
+.navbar 
+{
+    padding-top: 0.5vh;
+    padding-left: 2vw;
+    /*height: 3.6vw;*/
+}
+
+.navbar .navbar-brand:hover 
+{
+    color: white;
+}
+
+.navbar .navbar-nav li a 
+{
+    color: #70C4BA;
+    margin-right: 2.5vw;
+    display: inline-block;
+}
+
+@media screen and (max-width: 992px) 
+{
+    .navbar .navbar-nav li a 
+    {
+        font-size: 2vw !important;
+    }
+}
+
+@media screen and (min-width: 992px) 
+{
+    .navbar .navbar-nav li a 
+    {
+        font-size: 1.8vw !important;
+    }
+}
+
+.navbar .navbar-nav li a:hover 
+{
+    color: white;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item 
+{
+    color: #37474f !important;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item:hover 
+{
+    color: black !important;
+}
+
+.navbar-toggler 
+{
+    margin-top: 3vh;
+    background-color: var(--dropdown-bg-color);
+}
+
+.navbar-toggler-icon 
+{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(60, 68, 91, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* 
+ * ------------------------------------------------------------------------------------------- 
+ * landing-page design
+ * ------------------------------------------------------------------------------------------- 
+ */
+ .intro img 
+ {
+    width: 330px;
+    height: 330px;
+ }
+
+ @media screen and (max-width: 992px)
+ {
+    .intro 
+    {
+        background-color: var(--main-bg-color);
+        margin-top: -9vh;
+        height:95vh;
+        color: #70C4BA;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        align-items: center;
+    }
+}
+
+ @media screen and (min-width: 992px)
+ {
+    .intro 
+    {
+        color: #70C4BA;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        align-items: center;
+    }
+
+    .intro img
+    {
+        margin-top: 18vh;
+    }
+}
+
+@media screen and (max-width: 250px) 
+{
+    .intro h2 
+    {
+        font-size: 12px;
+    }
+
+    .intro h4 
+    {
+        font-size: 10px;
+    }
+
+    .intro #logo 
+    {
+        width: 20vw;
+        height: 20vw;
+    }
+}
+
+/*adjusting the icon size on smaller heights*/
+@media screen and (max-height: 600px) 
+{
+    .intro #logo 
+    {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .intro h2 
+    {
+        font-size: 15px;
+    }
+
+    .intro h4 
+    {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-height: 550px) 
+{
+    .intro #logo 
+    {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .intro h2 
+    {
+        font-size: 8px;
+    }
+
+    .intro h4 
+    {
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-height: 470px) 
+{
+    .intro #logo 
+    {
+        width: 9vw;
+        height: 9vw;
+    }
+
+    .intro h2 
+    {
+        font-size: 8px;
+    }
+
+    .intro h4 
+    {
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width: 360px) 
+{
+    .intro h2 
+    {
+        font-size: 20px !important;
+    }
+
+    .intro h4 
+    {
+        font-size: 15px;
+    }
+
+    .intro #logo 
+    {
+        width: 40vh;
+        height: 40vh;
+    }
+}
+
+/* 
+ * ------------------------------------------------------------------------------------------- 
+ * Dropdown
+ * ------------------------------------------------------------------------------------------- 
+ */
+@media screen and (min-width: 500px) 
+{
+    .dropdown 
+    {
+        margin-top: 2vh;
+    }
+}
+
+@media screen and (max-width: 500px) 
+{
+    .dropdown 
+    {
+        padding-top: 1vh;
+    }
+}
+
+/* Dropdown button design*/
+.language .dropdown .btn 
+{
+    background: var(--dropdown-bg-color);
+    border: 0px;
+    color: var(--dropdown-font-color);
+    width: 160px;
+}
+
+/* designing dropdown items area*/
+.dropdown .dropdown-menu 
+{
+    background: var(--dropdown-items-bg-color);
+    /*border-block-color: #41a49a;*/
+    width: 140px !important;
+}
+
+/* Designing dropdown area items*/
+.dropdown .dropdown-menu .dropdown-item:hover 
+{
+    background: var(--dropdown-hover-color);
+}
+
+/* Designing active dropdown item*/
+.dropdown .dropdown-menu .active 
+{
+    background: var(--dropdown-active-color) !important;
+    cursor: context-menu;
+}
+
+.dropdown .dropdown-menu .active:hover 
+{
+    /*bg-color of active item on hover should not change*/
+    background: inherit;
+}
